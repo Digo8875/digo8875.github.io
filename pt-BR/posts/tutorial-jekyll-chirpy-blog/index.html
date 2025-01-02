@@ -39,15 +39,15 @@
 <meta property="og:url" content="https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/" />
 <meta property="og:site_name" content="{“en”=&gt;”Rodrigo Candido”, “pt-BR”=&gt;”Rodrigo Candido”}" />
 <meta property="og:image" content="https://digo8875.github.io//assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png" />
-<meta property="og:image:alt" content="Jekyll Chirpy" />
+<meta property="og:image:alt" content="Mascote Chirpy" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-01-01T13:00:00-03:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://digo8875.github.io//assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png" />
-<meta name="twitter:image:alt" content="Jekyll Chirpy" />
+<meta name="twitter:image:alt" content="Mascote Chirpy" />
 <meta property="twitter:title" content="Tutorial - Criando um blog com Jekyll Chirpy" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rodrigo Candido","url":"https://www.linkedin.com/in/rodrigo-candido-ba0207173/"},"dateModified":"2025-01-01T13:00:00-03:00","datePublished":"2025-01-01T13:00:00-03:00","description":"Tutorial para criação de blog com Jekyll Chirpy","headline":"Tutorial - Criando um blog com Jekyll Chirpy","image":{"alt":"Jekyll Chirpy","url":"https://digo8875.github.io//assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/"},"url":"https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rodrigo Candido","url":"https://www.linkedin.com/in/rodrigo-candido-ba0207173/"},"dateModified":"2025-01-02T15:57:35-03:00","datePublished":"2025-01-01T13:00:00-03:00","description":"Tutorial para criação de blog com Jekyll Chirpy","headline":"Tutorial - Criando um blog com Jekyll Chirpy","image":{"alt":"Mascote Chirpy","url":"https://digo8875.github.io//assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/"},"url":"https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1115,17 +1115,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -1193,6 +1182,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Atualizado
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1735844255"
+  data-df="DD/MM/YYYY"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  02/01/2025
+</time>
+
+        </span>
+      
 
       
         
@@ -1202,7 +1214,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png" class="popup img-link preview-img shimmer"><img src="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png"  alt="Jekyll Chirpy" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Jekyll Chirpy</figcaption></div>
+          <a href="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png" class="popup img-link preview-img shimmer"><img src="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/post-cover.png"  alt="Mascote Chirpy" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Mascote Chirpy</figcaption></div>
       
 
       <div class="d-flex justify-content-between">
@@ -1247,7 +1259,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="3884 palavras"
+  title="3917 palavras"
 >
   <em>21 min</em> de leitura</span>
 
@@ -1282,18 +1294,16 @@
 
   <div class="content">
     <h2 id="introdução"><span class="me-2">Introdução</span><a href="#introdução" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p> Esse artigo é um tutorial que exemplifica uma abordagem para criação de um blog e geração de seus arquivos para deploy.<br />
- Para o exemplo utilizaremos o GitHub.<br />
- A ideia da implementação é também permitir que, caso deseje, seu código possa ficar em um repositório privado e só seja construída a aplicação para exibição do que você realmente deseja exibir.</p>
+<p>Esse artigo é um tutorial que exemplifica uma abordagem para criação de blog e geração de seus arquivos para deploy.<br />
+A ideia é implementarmos um blog que permita posts em vários idiomas, utilizando Jekyll com tema Chirpy, sem sabermos implementação de script do GitHub Pages.<br />
+Para a parte de arquivos teremos a divisão entre repositórios distintos, de desenvolvimento e deploy, permitindo que também possamos fazer o deploy do blog em outras ferramentas ou customizar o funcionamento do nosso GitHub IO.<br />
+Para o exemplo utilizaremos o GitHub e faremos o deploy manualmente.</p>
 
 <h2 id="a-quem-é-indicado"><span class="me-2">A Quem é Indicado?</span><a href="#a-quem-é-indicado" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <ul class="task-list">
   <li class="task-list-item"><i class="fas fa-check-circle fa-fw checked"></i>Desenvolvedores que querem ter um blog aberto gratuitamente ao público</li>
   <li class="task-list-item"><i class="fas fa-check-circle fa-fw checked"></i>Desenvolvedores que não possuem conhecimento de script do githubpages</li>
 </ul>
-
-<h2 id="o-problema"><span class="me-2">O Problema</span><a href="#o-problema" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p> Implementar um blog que permita multilinguagem, utilizando Jekyll e tema Chirpy, sem saber implementação de script do Github Pages e com deploy manual.</p>
 
 <h2 id="requisitos"><span class="me-2">Requisitos</span><a href="#requisitos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <ul>
@@ -1328,12 +1338,10 @@ Iremos baixá-lo manualmente e ajustar para nosso repo, para podermos modificá-
 <p>Para o tutorial iremos utilizar o <a href="https://github.com/cotes2020/jekyll-theme-chirpy/releases/tag/v7.2.4" target="_blank"><strong>Chirpy - 7.2.4</strong></a>.
 Caso deseje outra versão, navegue pelas TAGs e escolha a de sua preferência.</p>
 
-<p>Obs: Baixe o Chirpy do repo de desenvolvimento e não do repo ‘starter’, pois permitirá alterações conforme desejar para seu blog;</p>
-
 <p>Extraia o zip da versão baixada;<br />
 Agora temos uma pasta <strong>jekyll-theme-chirpy-7.2.4</strong>, entre nela;<br />
-Remova a pasta <strong>.github</strong>, não iremos utilizar as automações de scripts;
-Transfira todos arquivos da pasta <strong>jekyll-theme-chirpy-7.2.4</strong> para nossa pasta do repo de desenvolvimento <strong>jekyll-chirpy-multilang-blog</strong>;
+Remova a pasta <strong>.github</strong>, não iremos utilizar as automações de scripts;<br />
+Transfira todos arquivos da pasta <strong>jekyll-theme-chirpy-7.2.4</strong> para nossa pasta do repo de desenvolvimento <strong>jekyll-chirpy-multilang-blog</strong>;<br />
 Abra a pasta <strong>jekyll-chirpy-multilang-blog</strong> no VSCode para começarmos a trabalhar;</p>
 
 <p>Ok, até aqui temos os arquivos iniciais, conforme a branch: <a href="https://github.com/Digo8875/jekyll-chirpy-multilang-blog/tree/1-chirpy-7.2.4" target="_blank"><strong>1-chirpy-7.2.4</strong></a></p>
@@ -1369,11 +1377,12 @@ Abra a pasta <strong>jekyll-chirpy-multilang-blog</strong> no VSCode para começ
 <span class="na">parallel_localization</span><span class="pi">:</span> <span class="kc">false</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Note que estamos criando a aplicação apenas para os idiomas <strong>en</strong> e <strong>pt-BR</strong>, tendo como padrão o idioma <strong>en</strong>. Ajuste conforme desejar.</p>
+<p>Note que estamos criando a aplicação apenas para os idiomas <strong>en</strong> e <strong>pt-BR</strong>, tendo como padrão o idioma <strong>en</strong>.<br />
+Ajuste seus idiomas conforme desejar.</p>
 
 <p>Abra o terminal na pasta da aplicação (<strong>/jekyll-chirpy-multilang-blog</strong>) e instale as dependências:</p>
-<div file="path/jekyll-chirpy-multilang-blog" class="language-shell highlighter-rouge"><div class="code-header">
-        <span data-label-text="path/jekyll-chirpy-multilang-blog"><i class="far fa-file-code fa-fw"></i></span>
+<div file="/jekyll-chirpy-multilang-blog" class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="/jekyll-chirpy-multilang-blog"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>bundle <span class="nb">install</span>
 </pre></td></tr></tbody></table></code></div></div>
@@ -1434,7 +1443,7 @@ Abra a pasta <strong>jekyll-chirpy-multilang-blog</strong> no VSCode para começ
 O projeto deve ter sido compilado sem gerar problemas no terminal;</p>
 
 <p>Vamos testar se nossa aplicação está rodando corretamente até o momento?<br />
-Atente-se que ela ainda não terá a troca de idiomas!</p>
+Atente-se que ela ainda não possuirá a seleção de idiomas!</p>
 
 <p>Execute no terminal os comandos:</p>
 <div file="path/jekyll-chirpy-multilang-blog" class="language-shell highlighter-rouge"><div class="code-header">
@@ -1470,7 +1479,7 @@ Buildar o Jekyll e arquivos da aplicação;
 Rodar nosso servidor local do Jekyll;
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Com o servidor do Jekyll funcionando, acesse a aplicação em <strong>localhost:4000</strong>. Devemos ter tudo funcionando:
+<p>Com o servidor do Jekyll funcionando, acesse a aplicação em <strong>localhost:4000</strong>. Devemos ter o blog inicial funcionando:
 <a href="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/img-1.png" class="popup img-link shadow post-img shimmer"><img src="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/img-1.png" alt="Desktop View"  loading="lazy"></a>
 <em>Exemplo inicial do blog</em></p>
 
@@ -1809,7 +1818,7 @@ Nesse ponto nossa aplicação deverá se encontrar com o menu lateral dessa mane
 <p>Ok, até aqui temos a aplicação conforme a branch: <a href="https://github.com/Digo8875/jekyll-chirpy-multilang-blog/tree/2-sidebar-lang-menu" target="_blank"><strong>2-sidebar-lang-menu</strong></a></p>
 
 <h2 id="5---ajustando-a-página-about"><span class="me-2">5 - Ajustando a página ‘About’</span><a href="#5---ajustando-a-página-about" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Essa página é um pouco diferente em sua implementação, então iremos adaptar para nossa tradução te idiomas.
+<p>Essa página é um pouco diferente em sua implementação, então iremos adaptar para nossa tradução de idiomas.<br />
 A ideia será filtrarmos o idioma e exibir a página correta, que poderá ser markdown ou html conforme configurarmos.</p>
 
 <p>Primeiro, vamos alterar o arquivo <strong>/_tabs/about.md</strong> e deixá-lo assim:</p>
@@ -1866,14 +1875,14 @@ Dessa maneira, teremos que criar os arquivos na pasta <strong>/_includes</strong
 <ul>
   <li>/_includes
     <ul>
+      <li>about-content.html</li>
+      <li>about-content.md</li>
       <li>/pt-BR
         <ul>
           <li>about-content.html</li>
           <li>about-content.md</li>
         </ul>
       </li>
-      <li>about-content.html</li>
-      <li>about-content.md</li>
     </ul>
   </li>
 </ul>
@@ -1994,14 +2003,14 @@ pt-BR
 <p>Ok, até aqui temos a aplicação conforme a branch: <a href="https://github.com/Digo8875/jekyll-chirpy-multilang-blog/tree/3-refactor-about-page-logic" target="_blank"><strong>3-refactor-about-page-logic</strong></a></p>
 
 <h2 id="6---trabalhando-com-posts-em-multilinguas"><span class="me-2">6 - Trabalhando com posts em multilinguas</span><a href="#6---trabalhando-com-posts-em-multilinguas" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Nossos posts sempre ficarão na pasta <strong>/_post</strong>.<br />
+<p>Nossos posts sempre ficarão na pasta <strong>/_posts</strong>.<br />
 Já que escolhemos o idioma <strong>en</strong> como padrão, os arquivos referentes a ele sempre estarão nas pastas raízes de cada módulo da aplicação.<br />
 Assim, os outros posts de traduções deverão seguir a padronização e estarem em suas respectivas pastas.</p>
 
 <p>Vamos fazer um exemplo com o <strong>getting-started</strong> do próprio Chirpy.<br />
-No arquivo <strong>/_post/2019-08-09-getting-started.md</strong>, adicione a configuração de lang (pode ser após o título), ficando com as configurações assim:</p>
-<div file="/_post/2019-08-09-getting-started.md" class="language-markdown highlighter-rouge"><div class="code-header">
-        <span data-label-text="/_post/2019-08-09-getting-started.md"><i class="far fa-file-code fa-fw"></i></span>
+No arquivo <strong>/_posts/2019-08-09-getting-started.md</strong>, adicione a configuração de lang (pode ser após o título), ficando com as configurações assim:</p>
+<div file="/_posts/2019-08-09-getting-started.md" class="language-markdown highlighter-rouge"><div class="code-header">
+        <span data-label-text="/_posts/2019-08-09-getting-started.md"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2032,12 +2041,12 @@ No arquivo <strong>/_post/2019-08-09-getting-started.md</strong>, adicione a con
 
 <p>Dessa maneira nosso post está configurado para o idioma <strong>en</strong>.</p>
 
-<p>Agora vamos fazer nossa tradução <strong>pt-BR</strong>. Criamos a pasta <strong>/post/pt-BR</strong>, que irá armazenar todos nossos posts no idioma.<br />
-Copie o arquivo correspondente ao idioma <strong>en</strong> para a pasta <strong>pt-BR</strong> e configure a <strong>lang</strong> do novo post. Também vamos alterar o conteúdo do post para sabermos que tem algo mudando conforme selecionamos os idiomas.</p>
+<p>Agora vamos fazer nossa tradução <strong>pt-BR</strong>. Criamos a pasta <strong>/_posts/pt-BR</strong>, que irá armazenar todos nossos posts do idioma.<br />
+Copie o arquivo correspondente ao idioma <strong>en</strong> para a pasta <strong>pt-BR</strong> e configure a <strong>lang</strong> do novo post. Também vamos alterar o conteúdo do novo post para sabermos que tem algo mudando conforme selecionamos os idiomas.</p>
 
 <p>Então nosso post <strong>getting-started</strong> em <strong>pt-BR</strong> ficará assim:</p>
-<div file="/_post/pt-BR/2019-08-09-getting-started.md" class="language-markdown highlighter-rouge"><div class="code-header">
-        <span data-label-text="/_post/pt-BR/2019-08-09-getting-started.md"><i class="far fa-file-code fa-fw"></i></span>
+<div file="/_posts/pt-BR/2019-08-09-getting-started.md" class="language-markdown highlighter-rouge"><div class="code-header">
+        <span data-label-text="/_posts/pt-BR/2019-08-09-getting-started.md"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2072,9 +2081,9 @@ Copie o arquivo correspondente ao idioma <strong>en</strong> para a pasta <stron
 Nosso POST em pt-BR !!!
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Vamos testar. Lembrando de rodar a aplicação com <code class="language-plaintext highlighter-rouge">bundle exec jekyll s</code> e acessando em <strong>localhost:4000</strong>.
-Acesse a página <strong>HOME</strong> e já teremos a exibição dos posts <strong>getting-started</strong> em ambos idiomas.
-Acesse o post do <strong>getting-started</strong> e troque de idioma.
+<p>Vamos testar. Lembrando de rodar a aplicação com <code class="language-plaintext highlighter-rouge">bundle exec jekyll s</code> e acessando em <strong>localhost:4000</strong>.<br />
+Acesse a página <strong>HOME</strong> e já teremos a exibição dos posts <strong>getting-started</strong> em ambos idiomas.<br />
+Acesse o post do <strong>getting-started</strong> e troque de idioma.<br />
 Agora o conteúdo do nosso post já está alterando de acordo com nossa seleção de idioma.</p>
 
 <h2 id="7---filtrando-a-exibição-dos-posts-na-página-home-por-idioma"><span class="me-2">7 - Filtrando a exibição dos posts na página ‘Home’ por idioma</span><a href="#7---filtrando-a-exibição-dos-posts-na-página-home-por-idioma" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
@@ -2083,10 +2092,10 @@ Agora o conteúdo do nosso post já está alterando de acordo com nossa seleçã
 <p>Aqui temos 2 opções:</p>
 <ul>
   <li>Iremos trabalhar <strong>SEMPRE</strong> criando cada post em <strong>TODOS OS IDIOMAS</strong>;</li>
-  <li>Iremos possuir post que não possuem tradução para todos idiomas e precisaremos filtrar a exibição;</li>
+  <li>Iremos possuir post que não existirão para todos idiomas e precisaremos filtrar a exibição;</li>
 </ul>
 
-<p>Se seguir na primeira opção, não precisa fazer mais nada. Apenas delete tudo da pasta <strong>/_post</strong> e inicie sua escrita, sempre seguindo a padronização de pastas dos posts e idiomas.</p>
+<p>Se seguir na primeira opção, não precisa fazer mais nada. Apenas delete tudo da pasta <strong>/_posts</strong> e inicie sua escrita, sempre seguindo a padronização de pastas dos posts e idiomas.</p>
 
 <p>Como quero um pouco mais de diversão, vamos seguir com a segunda opção.</p>
 
@@ -2126,13 +2135,13 @@ Também lembramos que <strong>temos nosso idioma padrão</strong>, então todos 
 
 <h2 id="8---ajustando-nosso-diretório-de-imagens"><span class="me-2">8 - Ajustando nosso diretório de imagens</span><a href="#8---ajustando-nosso-diretório-de-imagens" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Agora vamos para nossas imagens e assets.<br />
-As imagens de base são utilizadas do CDN do Chirpy, então para utilizar nossas próprias imagens nos posts e site devemos ajustar para nossos arquivos locais da aplicação. Podemos também configurar um link para nosso CDN externo ou nosso próprio domínio da aplicação, porém irem fazer com arquivos nas pastas da própria aplicação.<br />
+As imagens de base são utilizadas do CDN do Chirpy, então para utilizar nossas próprias imagens nos posts e site devemos ajustar para nossos arquivos locais da aplicação.   Podemos também configurar um link para nosso CDN externo ou nosso próprio domínio da aplicação, porém iremos fazer com arquivos nas pastas da própria aplicação.<br />
 Note que em localhost funciona normalmente e conseguimos também utilizar links de imagens do nosso assets sem problema, isso devido ao nosso comando <code class="language-plaintext highlighter-rouge">bundle exec jekyll s</code> criar um servidor e configurar automaticamente nosso domínio como <strong>localhost:4000</strong>. Porém, quando subirmos para o GitHub irá dar problema pois o build da aplicação não conterá o domínio do localhost.</p>
 
 <p>Como iremos retirar o CDN do Chirpy das configurações, as imagens da aplicação irão ficar com problema de exibição até configurarmos corretamente.</p>
 
-<p>Para os posts eu utilizaria a ideia padronizada, por exemplo: **/assets/img/posts/<nome_do_post>** e assim manteria o padrão de idiomas, com o **en** na raíz e cada imagem que fosse necessária traduzir nas respectivas pastas de idiomas.  
-Para as imagens que utilizar na aplicação como um todo, utilizaria a pasta: **/assets/img/site**.</nome_do_post></p>
+<p>Para os posts eu utilizaria a ideia padronizada, por exemplo: <strong>/assets/img/posts/NOME_DO_POST</strong> e assim manteria o padrão de idiomas, com o <strong>en</strong> na raíz e cada imagem que fosse necessária traduzir nas respectivas pastas de idiomas.<br />
+Para as imagens que utilizar na aplicação como um todo, utilizaria a pasta: <strong>/assets/img/site</strong>.</p>
 
 <p>Assim, vamos começar nossas mudanças. Crie as pastas:</p>
 <ul>
@@ -2149,7 +2158,8 @@ Para as imagens que utilizar na aplicação como um todo, utilizaria a pasta: **
 </ul>
 
 <p>Vamos ajustar nosso avatar. Copie alguma imagem e salve na pasta <strong>/assets/img/site</strong>.<br />
-Eu fiz com a imagem do Chirpy e com o nome padrão <strong>avatar.png</strong>, para ser possível trocar depois. Utilizei a imagem <strong>/assets/img/favicons/android-chrome-512x512.png</strong> e salvei como <strong>/assets/img/site/avatar.png</strong></p>
+Eu fiz com a imagem do Chirpy e com o nome padrão <strong>avatar.png</strong>, para ser possível trocar depois.<br />
+Utilizei a imagem <strong>/assets/img/favicons/android-chrome-512x512.png</strong> e salvei como <strong>/assets/img/site/avatar.png</strong></p>
 
 <p>Agora vamos ajustar as configurações em <em>/_config.yml</em>:</p>
 <div file="/_config.yml" class="language-yaml highlighter-rouge"><div class="code-header">
@@ -2183,12 +2193,12 @@ Ajuste o AVATAR, conforme criamos a imagem;</p>
 Note que a imagem do post <strong>Text and Typography</strong> não é mais acessível, justamente por termos retirado a configuração do CDN.</p>
 
 <p>Vamos fazer um exemplo de como adicionar a imagem no post?<br />
-Irei utilizar a própria imagem do avatar, mas seguindo nossa padronização de pastas. Copie ela para: <strong>/assets/img/posts/2019-08-09-getting-started/post-cover.png</strong>, lembrando que caso ela precise de uma imagem traduzida para o <strong>pt-BR</strong> também deverá criar outra imagem <strong>/assets/img/posts/2019-08-09-getting-started/pt-BR/post-cover.png</strong>.<br />
-Estou utilizando essa nomenclatura pois assim seguimos o padrão de que <strong>todo post que tenha imagem de capa</strong> terá uma imagem <strong>post-cover.png</strong> e depois as demais imagens do post para escrevermos o que desejarmos.</p>
+Irei utilizar a própria imagem do avatar, mas seguindo nossa padronização de pastas. Copie ela para: <strong>/assets/img/posts/2019-08-08-text-and-typography/post-cover.png</strong>, lembrando que caso ela precise de uma imagem traduzida para o <strong>pt-BR</strong> também deverá criar outra imagem <strong>/assets/img/posts/2019-08-08-text-and-typography/pt-BR/post-cover.png</strong>.<br />
+Estou utilizando essa nomenclatura pois assim seguimos o padrão de que <strong>todo post que tenha imagem de capa</strong> terá uma imagem <strong>post-cover.png</strong> e depois as demais imagens do post para utilizarmos na escrita como desejarmos.</p>
 
 <p>Vamos ajustar a configuração da imagem no post:</p>
-<div file="/_post/2019-08-08-text-and-typography.md" class="language-markdown highlighter-rouge"><div class="code-header">
-        <span data-label-text="/_post/2019-08-08-text-and-typography.md"><i class="far fa-file-code fa-fw"></i></span>
+<div file="/_posts/2019-08-08-text-and-typography.md" class="language-markdown highlighter-rouge"><div class="code-header">
+        <span data-label-text="/_posts/2019-08-08-text-and-typography.md"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2216,7 +2226,7 @@ Estou utilizando essa nomenclatura pois assim seguimos o padrão de que <strong>
 <span class="na">pin</span><span class="pi">:</span> <span class="kc">true</span>
 <span class="na">math</span><span class="pi">:</span> <span class="kc">true</span>
 <span class="na">mermaid</span><span class="pi">:</span> <span class="kc">true</span>
-<span class="na">media_subpath</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/assets/img/posts/2019-08-09-getting-started'</span>
+<span class="na">media_subpath</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/assets/img/posts/2019-08-08-text-and-typography'</span>
 <span class="na">image</span><span class="pi">:</span>
   <span class="na">path</span><span class="pi">:</span> <span class="s">/post-cover.png</span>
   <span class="na">alt</span><span class="pi">:</span> <span class="s">The Post Cover Image</span>
@@ -2246,6 +2256,11 @@ Pronto, agora temos nossa imagem de capa no post pegando dos nossos arquivos loc
 7
 8
 9
+10
+11
+12
+13
+14
 </pre></td><td class="rouge-code"><pre><span class="c1"># the main title</span>
 <span class="na">title</span><span class="pi">:</span>
   <span class="na">en</span><span class="pi">:</span> <span class="s">Chirpy EN</span>
@@ -2255,12 +2270,19 @@ Pronto, agora temos nossa imagem de capa no post pegando dos nossos arquivos loc
 <span class="na">tagline</span><span class="pi">:</span>
   <span class="na">en</span><span class="pi">:</span> <span class="s">A text-focused Jekyll theme</span>
   <span class="na">pt-BR</span><span class="pi">:</span> <span class="s">Um tema Jekyll focado em texto</span>
+
+<span class="c1"># used by seo meta and the atom feed</span>
+<span class="na">description</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">A minimal, responsive and feature-rich Jekyll theme for technical writing.</span>
+  <span class="na">pt-BR</span><span class="pi">:</span> <span class="s">Um tema Jekyll mínimo, responsivo e rico em recursos para redação técnica.</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Agora faça a substituição das variáveis de toda a aplicação, pelo replace do VSCode, para utilizar as novas variáveis de idioma:
-Altere <strong>site.title</strong> para <strong>site.title[site.active_lang]</strong>
-Altere <strong>site.tagline</strong> para <strong>site.tagline[site.active_lang]</strong>
-Altere <strong>site.description</strong> para <strong>site.description[site.active_lang]</strong></p>
+<p>Agora faça a substituição das variáveis de toda a aplicação, pelo replace do VSCode, para utilizar as novas variáveis de idioma:</p>
+<ul>
+  <li>Altere <strong>site.title</strong> para <strong>site.title[site.active_lang]</strong></li>
+  <li>Altere <strong>site.tagline</strong> para <strong>site.tagline[site.active_lang]</strong></li>
+  <li>Altere <strong>site.description</strong> para <strong>site.description[site.active_lang]</strong></li>
+</ul>
 
 <p>Ok, até aqui temos a aplicação conforme a branch: <a href="https://github.com/Digo8875/jekyll-chirpy-multilang-blog/tree/6-title-languages" target="_blank"><strong>6-title-languages</strong></a></p>
 
@@ -2269,13 +2291,13 @@ Altere <strong>site.description</strong> para <strong>site.description[site.acti
 Acredito que dando uma lida no arquivo as informações do Jekyll sejam claras, então basta ir ajustando conforme suas informações pessoais e redes sociais para que seu blog fique completo.</p>
 
 <p>Também temos configurações para você poder utilizar nos seus posts, como o autor, encontrada em <strong>/_data/authors.yml</strong> e acessível pelo tutorial <a href="https://chirpy.cotes.page/posts/write-a-new-post/#author-information" target="_blank"><strong>Chirpy - Author Information</strong></a>.<br />
-Como a ideia deste tutorial é focar na abordagem de multilinguagem do blog, deixo com você a documentação do próprio Chirpy para que você possa aprender mais sobre a ferramenta e implementar seu blog: <a href="https://chirpy.cotes.page/">https://chirpy.cotes.page/</a>. Como você pode ver na documentação do Chirpy, você ainda pode ajustar diversas coisas em seus posts, como imagens, vídeos, áudios, diagramas, etc.
+Como a ideia deste tutorial é focar na abordagem de multilinguagem do blog, deixo com você a documentação do próprio Chirpy para que você possa aprender mais sobre a ferramenta e implementar seu blog: <a href="https://chirpy.cotes.page/">https://chirpy.cotes.page/</a>. Como você pode ver na documentação do Chirpy, você ainda pode ajustar diversas coisas em seus posts, como imagens, vídeos, áudios, diagramas, etc.<br />
 Também temos a documentação do Jekyll para você consultar: <a href="https://jekyllrb.com/docs/">https://jekyllrb.com/docs/</a>.</p>
 
 <h2 id="11---criando-nosso-repositório-de-deploy"><span class="me-2">11 - Criando nosso repositório de deploy</span><a href="#11---criando-nosso-repositório-de-deploy" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Aplicação implementada, vamos agora colocar para rodar no Github.</p>
 
-<p>Crie um repositório para deploy do blog. Esse repositório deverá ser seu nome de usuário para que o github permita hospedar seu blog estático, seguindo o padrão: **<username>.github.io**. No meu caso ficou <digo8875.github.io></digo8875.github.io></username></p>
+<p>Crie um repositório para deploy do blog. Esse repositório deverá ser seu nome de usuário para que o github permita hospedar seu blog estático, seguindo o padrão: <strong>USERNAME.github.io</strong>. No meu caso ficou <a href="https://digo8875.github.io" target="_blank"><strong>digo8875.github.io</strong></a></p>
 
 <p>Clone o repo para sua pasta de trabalho.</p>
 
@@ -2308,18 +2330,18 @@ bundle <span class="nb">exec </span>jekyll build
 <p>Se você for no Github e acompanhar o repositório, verá que automaticamente uma ação do Github Pages será colocada na fila e executada.
 Após funcionar essa ação do Github, seu blog estará com as informações atualizadas e o deploy estará feito.</p>
 
-<p>Conforme podemos observar na imagem, nos retângulo vermelhos houve a execução do Github Pages:
+<p>Conforme podemos observar na imagem, nos retângulo em laranja houve a execução do Github Pages:
 <a href="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/img-4.png" class="popup img-link shadow post-img shimmer"><img src="/assets/img/posts/2025-01-01-tutorial-jekyll-chirpy-blog/img-4.png" alt="Desktop View"  loading="lazy"></a>
 <em>Repositório no GitHub com arquivos de deploy do blog e ação do GitHub Pages executada</em></p>
 
-<p>Para acessarmos nosso blog, basta colocarmos no navegador: **<username>.github.io**, onde o meu é <digo8875.github.io></digo8875.github.io></username></p>
+<p>Para acessarmos nosso blog, basta colocarmos no navegador: <strong>USERNAME.github.io</strong>, onde o meu é <a href="https://digo8875.github.io" target="_blank"><strong>digo8875.github.io</strong></a></p>
 
 <p>Ok, até aqui temos a aplicação conforme a branch: <a href="https://github.com/Digo8875/jekyll-chirpy-multilang-blog/tree/7-github-io" target="_blank"><strong>7-github-io</strong></a></p>
 
-<h2 id="12---finalização"><span class="me-2">12 - Finalização</span><a href="#12---finalização" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="finalização"><span class="me-2">Finalização</span><a href="#finalização" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Agora temos uma abordagem para criarmos um blog e começarmos a dividir nossas ideias e ensinamentos.</p>
 
-<p>Agradeço o tempo que passamos juntos, espero que tenha gostado da nossa diversão e que assim possa contribuir com seus conhecimentos para outras pessoas.</p>
+<p>Agradeço o tempo que passamos juntos, espero que tenha gostado da nossa diversão e que assim possa contribuir com seus conhecimentos e experiências para outras pessoas.</p>
 
 <p>Lembre-se que essa é uma das várias maneiras de implementarmos um blog. Sinta-se livre para realizar modificações e melhorias conforme desejar ao seu blog.</p>
 
@@ -2500,34 +2522,6 @@ Após funcionar essa ação do Github, seu blog estará com as informações atu
           <a href="/pt-BR/posts/tutorial-jekyll-chirpy-blog/">Tutorial - Criando um blog com Jekyll Chirpy</a>
         </li>
       
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/pt-BR/posts/customize-the-favicon/">Customize the Favicon</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/pt-BR/posts/getting-started/">Getting Started</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/pt-BR/posts/write-a-new-post/">Writing a New Post</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/pt-BR/posts/text-and-typography/">Text and Typography</a>
-        </li>
-      
     </ul>
   </section>
   <!-- #access-lastmod -->
@@ -2627,196 +2621,6 @@ Após funcionar essa ação do Github, seu blog estará com as informações atu
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
 
 
   <section>
@@ -2830,22 +2634,10 @@ Após funcionar essa ação do Github, seu blog estará com as informações atu
         <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/chirpy/">chirpy</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/favicon/">favicon</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/getting-started/">getting started</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/jekyll/">jekyll</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/tutorial/">tutorial</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/writing/">writing</a>
       
     </div>
   </section>
@@ -2905,42 +2697,6 @@ Após funcionar essa ação do Github, seu blog estará com as informações atu
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
 
 
@@ -2952,100 +2708,6 @@ Após funcionar essa ação do Github, seu blog estará com as informações atu
 
 
 
-  <aside id="related-posts" aria-labelledby="related-label">
-    <h3 class="mb-4" id="related-label">Leia também</h3>
-    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        <article class="col">
-          <a href="/pt-BR/posts/customize-the-favicon/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565454840"
-  data-df="DD/MM/YYYY"
-  
->
-  10/08/2019
-</time>
-
-              <h4 class="pt-0 my-2">Customize the Favicon</h4>
-              <div class="text-muted">
-                <p>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/pt-BR/posts/getting-started/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565355300"
-  data-df="DD/MM/YYYY"
-  
->
-  09/08/2019
-</time>
-
-              <h4 class="pt-0 my-2">Getting Started</h4>
-              <div class="text-muted">
-                <p>Aqui temos nossa descrição em pt-BR</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/pt-BR/posts/write-a-new-post/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565244600"
-  data-df="DD/MM/YYYY"
-  
->
-  08/08/2019
-</time>
-
-              <h4 class="pt-0 my-2">Writing a New Post</h4>
-              <div class="text-muted">
-                <p>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-    </nav>
-  </aside>
-  <!-- #related-posts -->
-
 
             
               
@@ -3056,13 +2718,9 @@ Naming and...</p>
   
 
   
-    <a
-      href="/pt-BR/posts/customize-the-favicon/"
-      class="btn btn-outline-primary"
-      aria-label="Anterior"
-    >
-      <p>Customize the Favicon</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Anterior">
+      <p>-</p>
+    </div>
   
 
   
@@ -3212,196 +2870,6 @@ Naming and...</p>
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
 
 
   <section>
@@ -3415,22 +2883,10 @@ Naming and...</p>
         <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/chirpy/">chirpy</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/favicon/">favicon</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/getting-started/">getting started</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/jekyll/">jekyll</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/tutorial/">tutorial</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/pt-BR/tags/writing/">writing</a>
       
     </div>
   </section>
