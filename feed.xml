@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://digo8875.github.io//</id>
-  <title>Rodrigo Candido</title>
+  <title>Rodrigo Cândido</title>
   <subtitle>A blog focused on Software Development</subtitle>
-  <updated>2025-01-03T22:59:03-03:00</updated>
+  <updated>2025-01-07T19:36:19-03:00</updated>
   <author>
     <name>Rodrigo Candido</name>
     <uri>https://digo8875.github.io//</uri>
@@ -24,7 +24,7 @@
     <link href="https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/" rel="alternate" type="text/html" title="Tutorial - Creating a blog with Jekyll Chirpy" />
     <published>2025-01-01T13:00:00-03:00</published>
   
-    <updated>2025-01-03T20:49:54-03:00</updated>
+    <updated>2025-01-03T23:01:49-03:00</updated>
   
     <id>https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/</id>
     <content type="text/html" src="https://digo8875.github.io//posts/tutorial-jekyll-chirpy-blog/" />
