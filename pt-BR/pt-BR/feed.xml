@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Rodrigo Candido</title>
+  <title>Rodrigo Cândido</title>
   <subtitle>A blog focused on Software Development</subtitle>
-  <updated>2025-01-07T12:18:11-03:00</updated>
+  <updated>2025-01-08T22:27:16-03:00</updated>
   <author>
     <name>Rodrigo Candido</name>
     <uri>http://localhost:4000/</uri>
