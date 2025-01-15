@@ -4,7 +4,7 @@
   <id>https://digo8875.github.io//</id>
   <title>Rodrigo Cândido</title>
   <subtitle>Um blog voltado a Desenvolvimento de Software</subtitle>
-  <updated>2025-01-12T14:26:51-03:00</updated>
+  <updated>2025-01-14T22:49:24-03:00</updated>
   <author>
     <name>Rodrigo Candido</name>
     <uri>https://digo8875.github.io//</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Tutorial - Adicionando citação aleatória em post com Jekyll Chirpy</title>
+    <link href="https://digo8875.github.io//pt-BR/posts/tutorial-jekyll-chirpy-random-quote-in-post/" rel="alternate" type="text/html" title="Tutorial - Adicionando citação aleatória em post com Jekyll Chirpy" />
+    <published>2025-01-14T16:00:00-03:00</published>
+  
+    <updated>2025-01-14T16:00:00-03:00</updated>
+  
+    <id>https://digo8875.github.io//posts/tutorial-jekyll-chirpy-random-quote-in-post/</id>
+    <content type="text/html" src="https://digo8875.github.io//posts/tutorial-jekyll-chirpy-random-quote-in-post/" />
+    <author>
+      <name>rodrigo-candido</name>
+    </author>
+
+  
+    
+    <category term="Blog" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  <summary>Tutorial para implementação de citações aleatórias em posts do blog</summary>
+
+  </entry>
 
   
   <entry>
